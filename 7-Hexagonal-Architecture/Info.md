@@ -7,6 +7,14 @@
 Made famous by Alistair Cockburn in 2005  
 Used by: Netflix, Uber, Amazon (parts), Miro, Deliveroo, most serious DDD teams
 
+![alt text](image-1.png)
+![alt text](image.png)
+
+### Nice Articles
+https://medium.com/ssense-tech/hexagonal-architecture-there-are-always-two-sides-to-every-story-bc0780ed7d9c
+https://www.arhohuttunen.com/hexagonal-architecture/
+
+
 ## Core Idea in One Sentence
 
 > **"Keep your business logic completely independent of frameworks, databases, UI, and external services."**

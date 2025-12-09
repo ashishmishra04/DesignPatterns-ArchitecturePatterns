@@ -109,6 +109,9 @@ Patterns for managing data persistence and access layer logic.
 <a id="architectural-patterns"></a>
 ## 🌐 Architectural Patterns
 
+### Top 5 Architectural Patters 
+![alt text](image.png)
+
 Complete architectural approaches for structuring enterprise applications.
 
 ### 5. [Hexagonal Architecture (Ports & Adapters)](/7-Hexagonal-Architecture/)

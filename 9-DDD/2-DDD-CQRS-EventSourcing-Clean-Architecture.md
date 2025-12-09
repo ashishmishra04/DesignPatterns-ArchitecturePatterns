@@ -4,6 +4,8 @@
 
 Single source of truth — battle-tested, production-ready, future-proof.
 
+### Nice Arcticle (DDD, Hexagonal, Onion, Clean, CQRS, … How I put it all together)
+https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/
 
 # Clean Architecture + DDD + CQRS + Event Sourcing  
 **The Gold Stack That Survives 10+ Years and 100+ Developers**

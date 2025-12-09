@@ -14,6 +14,22 @@ Used daily by: Shopify, Uber, Booking.com, Miro, Deliveroo, Klarna, most serious
 
 If your code says `Order.Status = "Shipped"` but the business says “An order is only shipped after the warehouse scans the parcel”, you are NOT doing DDD.
 
+### High Level Overview
+![alt text](image.png)![alt text](image-2.png)
+### 8 Key Concepts
+![alt text](image-3.png)
+### Sample and concepts
+![alt text](image-1.png)
+
+### Why Even Architecture copled with DDD?
+![alt text](image-4.png)
+
+### Strategic Design vs tactical Design
+
+![alt text](image-5.png)
+![alt text](image-7.png)
+![alt text](image-6.png)
+
 ## Strategic DDD – The Part Most People Skip (But Shouldn’t)
 
 | Concept                 | Real-World Meaning                                               | Example (Flight Booking System)                     |

@@ -6,6 +6,13 @@
 Invented by Robert C. Martin (Uncle Bob) in 2012  
 Used by: Most enterprise .NET teams, Miro, Deliveroo, Uber (parts), Shopify, Bank systems
 
+![alt text](image.png)
+![alt text](image-1.png)
+
+## Nice Articles
+https://blog.ndepend.com/clean-architecture-for-asp-net-core-solution/
+https://medium.com/@rudrakshnanavaty/clean-architecture-7c1b3b4cb181
+https://www.geeksforgeeks.org/system-design/complete-guide-to-clean-architecture/
 ## Definition
 
 > **"An architecture that separates the core business rules from external concerns like UI, databases, and frameworks, making the system easy to test, maintain, and evolve."**
