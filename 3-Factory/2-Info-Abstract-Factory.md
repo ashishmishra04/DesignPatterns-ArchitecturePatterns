@@ -6,6 +6,10 @@ The **Abstract Factory** is a creational design pattern that provides an interfa
 
 It allows a client to create objects that belong to a consistent theme or family (e.g., UI components for different operating systems) while remaining decoupled from concrete implementations.
 
+## Important Links
+https://refactoring.guru/design-patterns/abstract-factory
+![alt text](image-2.png)
+
 Key participants:
 - **AbstractFactory** – declares an interface for creating abstract products
 - **ConcreteFactory** – implements the creation of concrete products
@@ -60,14 +64,14 @@ public class MacCheckbox : ICheckbox
     public void Check(bool isChecked) => Console.WriteLine($"macOS checkbox checked: {isChecked}");
 }
 
-// Abstract Factory
+// Abstract Factory : declares an interface for creating abstract products
 public interface IGUIFactory
 {
     IButton CreateButton();
     ICheckbox CreateCheckbox();
 }
 
-// Concrete Factories
+// Concrete Factories : implements the creation of concrete products
 public class WindowsFactory : IGUIFactory
 {
     public IButton CreateButton() => new WindowsButton();
@@ -138,81 +142,7 @@ macOS button clicked with ripple effect!
 macOS checkbox checked: True
 ```
 
-```mermaid
-classDiagram
-    class IGUIFactory {
-        <<interface>>
-        +CreateButton() IButton
-        +CreateCheckbox() ICheckbox
-    }
-
-    class WindowsFactory {
-        +CreateButton() IButton
-        +CreateCheckbox() ICheckbox
-    }
-
-    class MacFactory {
-        +CreateButton() IButton
-        +CreateCheckbox() ICheckbox
-    }
-
-    class IButton {
-        <<interface>>
-        +Render()
-        +OnClick()
-    }
-
-    class ICheckbox {
-        <<interface>>
-        +Render()
-        +Check(isChecked bool)
-    }
-
-    class WindowsButton {
-        +Render()
-        +OnClick()
-    }
-
-    class WindowsCheckbox {
-        +Render()
-        +Check(isChecked bool)
-    }
-
-    class MacButton {
-        +Render()
-        +OnClick()
-    }
-
-    class MacCheckbox {
-        +Render()
-        +Check(isChecked bool)
-    }
-
-    class Application {
-        -IButton _button
-        -ICheckbox _checkbox
-        +Application(factory IGUIFactory)
-        +RenderUI()
-        +Interact()
-    }
-
-    IGUIFactory <|.. WindowsFactory
-    IGUIFactory <|.. MacFactory
-
-    IButton <|.. WindowsButton
-    IButton <|.. MacButton
-    ICheckbox <|.. WindowsCheckbox
-    ICheckbox <|.. MacCheckbox
-
-    WindowsFactory --> WindowsButton : creates
-    WindowsFactory --> WindowsCheckbox : creates
-    MacFactory --> MacButton : creates
-    MacFactory --> MacCheckbox : creates
-
-    Application --> IGUIFactory : uses
-    Application o--> IButton
-    Application o--> ICheckbox
-```    
+![alt text](image-1.png)   
 ## When to Use Abstract Factory
 
 - When your system must be independent of how its objects are created, composed, and represented

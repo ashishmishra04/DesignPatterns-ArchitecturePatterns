@@ -5,6 +5,13 @@
 
 The **Factory Pattern** is a **creational design pattern** that provides an interface for creating instances of a class, while letting subclasses (or concrete factory classes) decide which class to instantiate. It promotes loose coupling by eliminating the need to bind application-specific classes into the code directly.
 
+## Must Read
+https://refactoring.guru/design-patterns/factory-method
+![alt text](image.png)
+The Factory Method pattern suggests that you replace direct object construction calls (using the new operator) with calls to a special factory method. Don’t worry: the objects are still created via the new operator, but it’s being called from within the factory method. Objects returned by a factory method are often referred to as products.
+
+
+
 Instead of calling a constructor directly:
 ```java
 new ConcreteProduct()

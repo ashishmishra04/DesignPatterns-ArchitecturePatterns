@@ -4,6 +4,9 @@
 Software architecture is the high-level blueprint for an entire system (like a city plan), defining overall structure, components, and their interactions, while design patterns are reusable blueprints for solving specific, recurring problems within that architecture (like building types), ranging from smaller behavioral issues (Creational, Structural, Behavioral) to larger system organization (Architectural Patterns like MVC or Microservices). Architecture provides the framework, and design patterns offer specific solutions, working together to build robust, scalable software. 
 ![alt text](image-1.png)
 
+## Important Article on Design Patherns
+https://refactoring.guru/design-patterns/creational-patterns
+
 ## Info In this Article
 A comprehensive collection of **design patterns**, **architectural patterns**, and **enterprise solutions** for modern C# development. This repository contains production-ready examples, interview preparation materials, and real-world implementations used by top-tier companies like Shopify, Uber, Booking.com, and Netflix.
 
