@@ -15,6 +15,7 @@ A comprehensive collection of **design patterns**, **architectural patterns**, a
 
 ---
 
+<a id="creational-patterns"></a>
 ## 🎯 Creational Patterns
 
 Patterns for object creation mechanisms, trying to create objects in a manner suitable to the situation.
@@ -57,6 +58,14 @@ Patterns for object creation mechanisms, trying to create objects in a manner su
 
 ---
 
+<a id="structural-patterns"></a>
+## 🧩 Structural Patterns
+
+This section will list structural patterns (Composite, Adapter, Facade, Bridge, Proxy, Decorator). Content coming soon.
+
+---
+
+<a id="data-access-patterns"></a>
 ## 🏗️ Data Access Patterns
 
 Patterns for managing data persistence and access layer logic.
@@ -97,6 +106,7 @@ Patterns for managing data persistence and access layer logic.
 
 ---
 
+<a id="architectural-patterns"></a>
 ## 🌐 Architectural Patterns
 
 Complete architectural approaches for structuring enterprise applications.
@@ -215,6 +225,7 @@ Advanced patterns for building complex business domains.
 
 ---
 
+<a id="advanced-patterns--combinations"></a>
 ## 🚀 Advanced Patterns & Combinations
 
 Complex patterns combining multiple architectural approaches.
@@ -238,6 +249,7 @@ Complex patterns combining multiple architectural approaches.
 
 ---
 
+<a id="behavioral-patterns"></a>
 ## 🔄 Behavioral Patterns
 
 Patterns that focus on communication between objects and distribution of responsibility.
