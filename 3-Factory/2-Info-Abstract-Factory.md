@@ -18,10 +18,11 @@ Key participants:
 - **ConcreteProduct** – implements the AbstractProduct interface
 - **Client** – uses only interfaces declared by AbstractFactory and AbstractProduct
 
+![alt text](image-3.png)
 ## Real-World Example
 
 A cross-platform UI toolkit that renders buttons and checkboxes differently on **Windows** and **macOS**, but the application code remains the same regardless of the operating system.
-
+![alt text](image-4.png)
 ## Sample Code in C#
 ![alt text](af.svg)
 ```markdown
