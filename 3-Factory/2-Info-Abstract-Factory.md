@@ -10,6 +10,7 @@ It allows a client to create objects that belong to a consistent theme or family
 https://refactoring.guru/design-patterns/abstract-factory
 ![alt text](image-2.png)
 
+
 Key participants:
 - **AbstractFactory** – declares an interface for creating abstract products
 - **ConcreteFactory** – implements the creation of concrete products
@@ -22,7 +23,7 @@ Key participants:
 A cross-platform UI toolkit that renders buttons and checkboxes differently on **Windows** and **macOS**, but the application code remains the same regardless of the operating system.
 
 ## Sample Code in C#
-
+![alt text](af.svg)
 ```markdown
 ```csharp
 // Abstract products
