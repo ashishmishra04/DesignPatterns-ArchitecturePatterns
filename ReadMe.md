@@ -282,10 +282,6 @@ Patterns that focus on communication between objects and distribution of respons
 
 ---
 
-## 📚 Additional Resources
-
-- **`sample.md`** - Sample documentation template for creating new pattern guides
-
 ---
 
 ## 🎯 Quick Reference by Use Case
