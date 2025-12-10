@@ -136,6 +136,8 @@ public sealed class EagerSingleton
     public static EagerSingleton Instance => _instance;
 }
 ```
+### Lazy vs Eager
+https://dev.to/albertbennett/lazy-vs-eager-initialization-abn
 
 Used when the instance is cheap and always needed.
 
