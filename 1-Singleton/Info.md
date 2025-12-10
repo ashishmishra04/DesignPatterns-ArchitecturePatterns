@@ -42,7 +42,7 @@ public sealed class Singleton
             {
                 lock (_lock)
                 {
-                    if (_instance == null)   // Second check
+                    if (_instance == null)   // Second check - This ensures thread safety while avoiding unnecessary locking, which improves performance 
                     {
                         _instance = new Singleton();
                     }
