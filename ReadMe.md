@@ -28,7 +28,7 @@ A comprehensive collection of **design patterns**, **architectural patterns**, a
 
 Patterns for object creation mechanisms, trying to create objects in a manner suitable to the situation.
 
-### 1. [Singleton Pattern](/1-Singleton/)
+### 1. [Singleton Pattern](/Design Patterns/1-Singleton/)
 
 **Definition**: Ensures a class has only one instance in the entire application and provides a global, centralized point of access to that instance.
 
@@ -39,14 +39,14 @@ Patterns for object creation mechanisms, trying to create objects in a manner su
 - Often used for shared resources: configuration, logging, caching, database connections
 
 **Files**:
-- [`Info.md`](/1-Singleton/Info.md) - Definition, key points, and basic Singleton implementation in C#
-- [`Interview.md`](/1-Singleton/Interview.md) - Interview questions and answers, including double-checked locking patterns and `Lazy<T>` implementation
+- [`Info.md`](/Design Patterns/1-Singleton/Info.md) - Definition, key points, and basic Singleton implementation in C#
+- [`Interview.md`](/Design Patterns/1-Singleton/Interview.md) - Interview questions and answers, including double-checked locking patterns and `Lazy<T>` implementation
 
 **Use Cases**: Logger, configuration manager, connection pools, feature toggles, cache managers
 
 ---
 
-### 2. [Factory Pattern](/3-Factory/)
+### 2. [Factory Pattern](/Design Patterns/3-Factory/)
 
 **Definition**: A creational design pattern that provides an interface for creating instances while letting subclasses decide which class to instantiate.
 
@@ -56,11 +56,11 @@ Patterns for object creation mechanisms, trying to create objects in a manner su
 - **Abstract Factory** - Creates families of related or dependent objects
 
 **Files**:
-- [`1-Info.md`](/3-Factory/1-Info.md) - Introduction to Factory Pattern, structure diagram, basic implementation
-- [`1.1-SimpleFactoryVsFactoryMethod.md`](/3-Factory/1.1-SimpleFactoryVsFactoryMethod.md) - Clear comparison, when to use each variant
-- [`2-Info-Abstract-Factory.md`](/3-Factory/2-Info-Abstract-Factory.md) - Abstract Factory for families of objects (cross-platform UI example)
-- [`3.1-FactoryMethodVsAbstractFactory.md`](/3-Factory/3.1-FactoryMethodVsAbstractFactory.md) - Detailed comparison of Factory Method vs Abstract Factory
-- [`3.2-FactoryMethodVsAbstractFactory.md`](/3-Factory/3.2-FactoryMethodVsAbstractFactory.md) - Additional comparison resources
+- [`1-Info.md`](/Design Patterns/3-Factory/1-Info.md) - Introduction to Factory Pattern, structure diagram, basic implementation
+- [`1.1-SimpleFactoryVsFactoryMethod.md`](/Design Patterns/3-Factory/1.1-SimpleFactoryVsFactoryMethod.md) - Clear comparison, when to use each variant
+- [`2-Info-Abstract-Factory.md`](/Design Patterns/3-Factory/2-Info-Abstract-Factory.md) - Abstract Factory for families of objects (cross-platform UI example)
+- [`3.1-FactoryMethodVsAbstractFactory.md`](/Design Patterns/3-Factory/3.1-FactoryMethodVsAbstractFactory.md) - Detailed comparison of Factory Method vs Abstract Factory
+- [`3.2-FactoryMethodVsAbstractFactory.md`](/Design Patterns/3-Factory/3.2-FactoryMethodVsAbstractFactory.md) - Additional comparison resources
 
 **Use Cases**: UI toolkit creation, database provider selection, plugin systems, payment gateway adapters
 
@@ -78,7 +78,7 @@ This section will list structural patterns (Composite, Adapter, Facade, Bridge, 
 
 Patterns for managing data persistence and access layer logic.
 
-### 3. [Repository Pattern](/4-Repository/)
+### 3. [Repository Pattern](/Design Patterns/4-Repository/)
 
 **Definition**: A design pattern that mediates between the domain and data mapping layers using a collection-like interface for accessing domain objects.
 
@@ -90,13 +90,13 @@ Patterns for managing data persistence and access layer logic.
 - Easy to swap data providers (EF Core, Dapper, MongoDB, etc.)
 
 **Files**:
-- [`Info.md`](/4-Repository/Info.md) - Complete guide with definitions, benefits, and full C# .NET 8 implementation examples
+- [`Info.md`](/Design Patterns/4-Repository/Info.md) - Complete guide with definitions, benefits, and full C# .NET 8 implementation examples
 
 **Use Cases**: Enterprise applications, DDD implementations, highly testable applications
 
 ---
 
-### 4. [Unit of Work Pattern](/5-UnitOfWork/)
+### 4. [Unit of Work Pattern](/Design Patterns/5-UnitOfWork/)
 
 **Definition**: Maintains a list of objects affected by a business transaction and coordinates the writing out of changes and the resolution of concurrency problems at the end of that transaction.
 
@@ -108,7 +108,7 @@ Patterns for managing data persistence and access layer logic.
 - Easier testing - can mock `IUnitOfWork` and verify `CompleteAsync()` called once
 
 **Files**:
-- [`Info.md`](/5-UnitOfWork/Info.md) - Definition, real-world e-commerce example, full implementation with patterns and best practices
+- [`Info.md`](/Design Patterns/5-UnitOfWork/Info.md) - Definition, real-world e-commerce example, full implementation with patterns and best practices
 
 **Use Cases**: E-commerce order processing, financial transactions, complex business operations requiring atomicity
 
@@ -122,7 +122,7 @@ Patterns for managing data persistence and access layer logic.
 
 Complete architectural approaches for structuring enterprise applications.
 
-### 5. [Hexagonal Architecture (Ports & Adapters)](/7-Hexagonal-Architecture/)
+### 5. [Hexagonal Architecture (Ports & Adapters)](/Architecture Patterns/1-Hexagonal-Architecture/)
 
 **Definition**: An architecture that keeps business logic completely independent of frameworks, databases, UI, and external services.
 
@@ -135,13 +135,13 @@ Complete architectural approaches for structuring enterprise applications.
 - Driven adapters (right side): Database repositories, message publishers
 
 **Files**:
-- [`Info.md`](/7-Hexagonal-Architecture/Info.md) - Comprehensive guide with visual diagrams, full implementation example in C#
+- [`Info.md`](/Architecture Patterns/1-Hexagonal-Architecture/Info.md) - Comprehensive guide with visual diagrams, full implementation example in C#
 
 **Used By**: Netflix, Uber, Amazon (parts), Miro, Deliveroo
 
 ---
 
-### 6. [Clean Architecture](/8-Clean-Architecture/)
+### 6. [Clean Architecture](/Architecture Patterns/2-Clean-Architecture/)
 
 **Definition**: An architecture that separates the core business rules from external concerns like UI, databases, and frameworks, making the system easy to test, maintain, and evolve.
 
@@ -161,13 +161,13 @@ Complete architectural approaches for structuring enterprise applications.
 - Scalability and longevity (10+ year systems)
 
 **Files**:
-- [`Info.md`](/8-Clean-Architecture/Info.md) - Full real-world e-commerce example, project structure, layer responsibilities
+- [`Info.md`](/Architecture Patterns/2-Clean-Architecture/Info.md) - Full real-world e-commerce example, project structure, layer responsibilities
 
 **Used By**: Most enterprise .NET teams, Miro, Deliveroo, Uber (parts), Shopify, banking systems
 
 ---
 
-### 7. [Vertical Slice Architecture](/10-Vertical-Slice-Architecture/)
+### 7. [Vertical Slice Architecture](/Architecture Patterns/4-Vertical-Slice-Architecture/)
 
 **Definition**: Organize code by business feature, not technical layers. Each slice = one complete business capability.
 
@@ -199,7 +199,7 @@ src/
 - Better for large teams - work on different features in parallel
 
 **Files**:
-- [`Info.md`](/10-Vertical-Slice-Architecture/Info.md) - 2025 gold standard implementation with .NET 8 Minimal APIs example
+- [`Info.md`](/Architecture Patterns/4-Vertical-Slice-Architecture/Info.md) - 2025 gold standard implementation with .NET 8 Minimal APIs example
 
 **Used By**: GitHub, Stripe, Miro, Shopify, Uber, most elite .NET teams
 
@@ -209,7 +209,7 @@ src/
 
 Advanced patterns for building complex business domains.
 
-### 8. [Domain-Driven Design (DDD)](/9-DDD/)
+### 8. [Domain-Driven Design (DDD)](/Architecture Patterns/3-DDD/)
 
 **Definition**: A software development approach focused on making code speak the same language as business experts — forever.
 
@@ -229,8 +229,8 @@ Advanced patterns for building complex business domains.
 - **Repositories**: Persistence of aggregates
 
 **Files**:
-- [`1-Info.md`](/9-DDD/1-Info.md) - Definitive 2025 C# guide with production-ready examples, no theory-only bullshit
-- [`2-DDD-CQRS-EventSourcing-Clean-Architecture.md`](/9-DDD/2-DDD-CQRS-EventSourcing-Clean-Architecture.md) - The ultimate 2025 stack combining Clean Architecture, DDD, CQRS, and Event Sourcing
+- [`1-Info.md`](/Architecture Patterns/3-DDD/1-Info.md) - Definitive 2025 C# guide with production-ready examples, no theory-only bullshit
+- [`2-DDD-CQRS-EventSourcing-Clean-Architecture.md`](/Architecture Patterns/3-DDD/2-DDD-CQRS-EventSourcing-Clean-Architecture.md) - The ultimate 2025 stack combining Clean Architecture, DDD, CQRS, and Event Sourcing
 
 **Used By**: Shopify, Uber, Booking.com, Miro, Deliveroo, Klarna, most serious fintechs, airlines, logistics
 
@@ -241,7 +241,7 @@ Advanced patterns for building complex business domains.
 
 Complex patterns combining multiple architectural approaches.
 
-### 9. [CQRS (Command Query Responsibility Segregation)](/6-CQRS/)
+### 9. [CQRS (Command Query Responsibility Segregation)](/Design Patterns/6-CQRS/)
 
 **Definition**: Separates the model for updates (Command) from the model for reads (Query). Different models can be optimized for their specific purpose.
 
@@ -252,9 +252,9 @@ Complex patterns combining multiple architectural approaches.
 - Better scalability - read and write sides scale independently
 
 **Files**:
-- [`1-Info.md`](/6-CQRS/1-Info.md) - Introduction to CQRS pattern, command and query models
-- [`2-EventSourcingWithCQRS.md`](/6-CQRS/2-EventSourcingWithCQRS.md) - The ultimate combination with Event Sourcing for auditable, scalable systems
-- [`3-DDD-with-CQRS.md`](/6-CQRS/3-DDD-with-CQRS.md) - Domain-Driven Design with CQRS & Event Sourcing in production-ready .NET 8
+- [`1-Info.md`](/Design Patterns/6-CQRS/1-Info.md) - Introduction to CQRS pattern, command and query models
+- [`2-EventSourcingWithCQRS.md`](/Design Patterns/6-CQRS/2-EventSourcingWithCQRS.md) - The ultimate combination with Event Sourcing for auditable, scalable systems
+- [`3-DDD-with-CQRS.md`](/Design Patterns/6-CQRS/3-DDD-with-CQRS.md) - Domain-Driven Design with CQRS & Event Sourcing in production-ready .NET 8
 
 **Use Cases**: Event-driven systems, audit-required applications, high-performance reads, microservices
 
@@ -265,7 +265,7 @@ Complex patterns combining multiple architectural approaches.
 
 Patterns that focus on communication between objects and distribution of responsibility.
 
-### 10. [Iterator Pattern](/2-Iterator/)
+### 10. [Iterator Pattern](/Design Patterns/2-Iterator/)
 
 **Definition**: Provides a way to access the elements of a collection sequentially without exposing the underlying data structure.
 
@@ -276,7 +276,7 @@ Patterns that focus on communication between objects and distribution of respons
 - Support for different collection types with unified interface
 
 **Files**:
-- [`Info.md`](/2-Iterator/Info.md) - Complete guide with custom iterator implementation in C#
+- [`Info.md`](/Design Patterns/2-Iterator/Info.md) - Complete guide with custom iterator implementation in C#
 
 **Use Cases**: Custom collections, tree traversal, iterator protocols, lazy loading
 
@@ -288,17 +288,17 @@ Patterns that focus on communication between objects and distribution of respons
 
 | Use Case | Pattern | Location |
 |----------|---------|----------|
-| Ensure single instance of a class | Singleton | `/1-Singleton/` |
-| Create objects without specifying exact classes | Factory | `/3-Factory/` |
-| Access collection elements without exposing structure | Iterator | `/2-Iterator/` |
-| Abstract data access from business logic | Repository | `/4-Repository/` |
-| Atomic transactions across multiple repositories | Unit of Work | `/5-UnitOfWork/` |
-| Separate commands from queries | CQRS | `/6-CQRS/` |
-| Domain-independent business logic | Hexagonal Architecture | `/7-Hexagonal-Architecture/` |
-| Independent frameworks and external concerns | Clean Architecture | `/8-Clean-Architecture/` |
-| Modeling complex business domains | DDD | `/9-DDD/` |
-| Organize by business features, not layers | Vertical Slice | `/10-Vertical-Slice-Architecture/` |
-| Immutable event-based state management | Event Sourcing + CQRS | `/6-CQRS/` |
+| Ensure single instance of a class | Singleton | `/Design Patterns/1-Singleton/` |
+| Create objects without specifying exact classes | Factory | `/Design Patterns/3-Factory/` |
+| Access collection elements without exposing structure | Iterator | `/Design Patterns/2-Iterator/` |
+| Abstract data access from business logic | Repository | `/Design Patterns/4-Repository/` |
+| Atomic transactions across multiple repositories | Unit of Work | `/Design Patterns/5-UnitOfWork/` |
+| Separate commands from queries | CQRS | `/Design Patterns/6-CQRS/` |
+| Domain-independent business logic | Hexagonal Architecture | `/Architecture Patterns/1-Hexagonal-Architecture/` |
+| Independent frameworks and external concerns | Clean Architecture | `/Architecture Patterns/2-Clean-Architecture/` |
+| Modeling complex business domains | DDD | `/Architecture Patterns/3-DDD/` |
+| Organize by business features, not layers | Vertical Slice | `/Architecture Patterns/4-Vertical-Slice-Architecture/` |
+| Immutable event-based state management | Event Sourcing + CQRS | `/Design Patterns/6-CQRS/` |
 
 ---
 
