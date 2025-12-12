@@ -24,6 +24,9 @@ A comprehensive collection of **design patterns**, **architectural patterns**, a
 ---
 
 <a id="creational-patterns"></a>
+## **Design Patterns**
+
+<a id="creational-patterns"></a>
 ## 🎯 Creational Patterns
 
 Patterns for object creation mechanisms, trying to create objects in a manner suitable to the situation.
@@ -282,6 +285,17 @@ Patterns that focus on communication between objects and distribution of respons
 
 ---
 
+### 11. [Mediator Pattern](/DesignPatterns/7-Mediator/)
+
+**Definition**: Defines an object that encapsulates how a set of objects interact, promoting loose coupling by keeping objects from referring to each other explicitly and allowing their interaction to vary independently.
+
+**Files**:
+- [`Info.md`](/DesignPatterns/7-Mediator/Info.md) - Overview, implementation examples, and typical use-cases in C#
+
+**Use Cases**: GUI components coordination, chat rooms, decoupling complex interactions between services
+
+---
+
 ---
 
 ## 🎯 Quick Reference by Use Case
@@ -298,7 +312,6 @@ Patterns that focus on communication between objects and distribution of respons
 | Independent frameworks and external concerns | Clean Architecture | `/ArchitecturePatterns/2-Clean-Architecture/` |
 | Modeling complex business domains | DDD | `/ArchitecturePatterns/3-DDD/` |
 | Organize by business features, not layers | Vertical Slice | `/ArchitecturePatterns/4-Vertical-Slice-Architecture/` |
-| Immutable event-based state management | Event Sourcing + CQRS | `/DesignPatterns/6-CQRS/` |
 
 ---
 
@@ -407,15 +420,19 @@ DesignPatterns/
 │   ├── 1-Info.md                       (CQRS introduction)
 │   ├── 2-EventSourcingWithCQRS.md      (Event Sourcing + CQRS combination)
 │   └── 3-DDD-with-CQRS.md              (DDD + CQRS + Event Sourcing)
-├── 7-Hexagonal-Architecture/
+├── 7-Mediator/
+│   └── Info.md                         (Mediator pattern overview and examples)
+
+ArchitecturePatterns/
+├── 1-Hexagonal-Architecture/
 │   └── Info.md                         (Ports and adapters architecture)
-├── 8-Clean-Architecture/
+├── 2-Clean-Architecture/
 │   └── Info.md                         (Clean Architecture full guide)
-├── 9-DDD/
+├── 3-DDD/
 │   ├── 1-Info.md                       (Domain-Driven Design definitive guide)
 │   └── 2-DDD-CQRS-EventSourcing-Clean-Architecture.md (The ultimate 2025 stack)
-└── 10-Vertical-Slice-Architecture/
-    └── Info.md                         (Vertical Slice 2025 gold standard)
+└── 4-Vertical-Slice-Architecture/
+  └── Info.md                         (Vertical Slice 2025 gold standard)
 ```
 
 ---
